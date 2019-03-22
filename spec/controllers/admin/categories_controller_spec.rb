@@ -63,7 +63,8 @@ describe Admin::CategoriesController do
     assert_raise(ActiveRecord::RecordNotFound) { Category.find(test_id) }
   end
   
-  describe "test_create" do
+  #Added for HW4
+  describe "test_create_category" do
     before(:each) do
       get :new
     end
